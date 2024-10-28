@@ -1,0 +1,5 @@
+-   status (loading...)
+-   error
+-  entityStatus (disabled кнопке- пока не прошел запрос)
+-  Утилитные функции
+

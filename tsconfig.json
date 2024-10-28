@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "baseUrl": "src",
+    "paths": {
+      "common/*": ["common/*"],
+      "app/*": ["app/*"]
+    }
+  },
+  "include": ["src"]
+}
+
+//TODO: "baseUrl": "src"
+// далее настройка WebStorm: Settings-Editor-TypeScript-Imports(в горизонт.меню)-Use paths relative to tsconfig.json
+//!!!!!!!!!!!!!!!!! тут же Scheme: PROJECT
+//но не всегда так правильно, т.к. часто проще выпрыгнуть на верх, чем начинать с корня-поэтому лучше опять убрать галочку
+//и прописать
+//   "paths": {
+//      "common/*": ["common/*"],
+//      "app/*": ["app/*"]
+//    }
+//   т.е. для common и app он будет брать относительые путиЮ для остальных выпрыгивать наверх ../../../
